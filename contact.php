@@ -1,3 +1,7 @@
+/*
+Author : Raj Kinkhabwala
+Version = 1.0
+*/
 <?php
 
 // Message vars
@@ -16,16 +20,18 @@
                 //check email
                 if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
                     $msg = 'Please Enter the valid email';
-                $msgClass = 'alert-danger';
-                }
-            }else{
+                    $msgClass = 'alert-danger';
+                                                }
+                                                    }
+                else{
                 $msg = 'Please fill all the fields';
                 $msgClass = 'alert-danger';
-            }
-        } else{
+                                                }
+                                                    } 
+                else{
             // Passed
             
-        }
+                                                    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
